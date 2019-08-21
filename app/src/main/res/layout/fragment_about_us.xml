@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:background="#ffffff">
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/completeDeveloperInfo">
+        <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="300dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_circular_frame"
+                android:id="@+id/developerPhotoFrame">
+            <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="400dp"
+                    android:src="@drawable/joey"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/developerPhoto"/>
+        </RelativeLayout>
+        <RelativeLayout
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/developerTextInfo"
+                android:layout_below="@+id/developerPhotoFrame">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textLine1"
+
+                    android:layout_centerHorizontal="true"
+                    android:text="This App Has Been Developed By"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textLine2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/textLine1"
+                    android:text="Ausaf Anwar Alvi."/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/textLine3"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textLine2"
+                    android:text="As part of Internshala Training Project"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/textLine4"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textLine3"
+                    android:text="App Version 1.0."/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
